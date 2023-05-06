@@ -8,8 +8,8 @@
     <link rel="stylesheet" src="styles.css">
     <title>TP Integrador</title>
 </head>
-<body>
 
+<body>
   
   <div class="container-fluid">
     <div class="row-fluid">
@@ -48,8 +48,7 @@
         </div>
     </div>  
 
-    <div class="">
-      <div id="move" class="position-absolute top-50 start-50 translate-middle-x text-light text-end">
+      <div id="move" class="position-absolute top-50 start-50 translate-middle-x text-white text-end">
         <h1>Conf Bs As</h1>
         <p>Bs As llega por primera vez a Argentina. Un evento para compartit con
           nuestra comunidad el conocimiento y experiencia de los expertos que
@@ -62,7 +61,6 @@
             <button type="button" class="btn btn-success Btn-Verde">Comprar tickets</button>
         </div>
       </div>
-    </div>
 </aside>
 
 
@@ -109,51 +107,90 @@
     <label></label>
   </div>
 
-  <div class="container card-img-top">
+  <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-2 g-0">
-        <div class="row-cols-1">
+        <div class="col-md-6">
           <div class="card h-100">
-            <img src="./imagenes_integrador_front/honolulu.jpg">
-            <div class="card-body">
-            </div>
-          </div>
+            <img src="./imagenes_integrador_front/honolulu.jpg">          </div>
         </div>
 
         <div class="row-cols-1">
           <div class="card h-100 background-color bg-dark p-3">
             <div class="card-body">
-              <p class="text-white">Bs As - Octubre</p>
-              <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina
-                sdjflksdjfklsjflkdsjfjslkjfklsdjfljlsjflsfjsljfslkjf
-                skjflkdsjflkjsdlkfjslkfjslkjfklsjfsd
-                sljdfklsjflskjfkljdfskljfsdjfjsdlfjslkjfklsdjfjdjskj
+              <h4><p class="text-white">Bs As - Octubre</p></h4>
+              <h6><p class="text-white small text-justify line-height">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu
+                es la más sureña de entre las principales ciudades estadosunidenses. Aunque el nombre de Honolulu se refiere al área urbana
+                en la costa sureste de la isla de Cabú, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada qua
+                cubre toda la ciudad (aproximadamente 600km2 de superficie).</h6>
               </p>
-              <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#demo">Conoce mas</button>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="collapse" data-bs-target="#demo">Conoce mas</button>
             </div>
           </div>
         </div>
       </div>
        
       <div class="container mt-2 text-center">
-        <h6><dl>CONOCE A LOS</dl></h6>
+        <h6><dl class="text small">CONVIERTETE EN UN</dl></h6>
         <h4 mt-0>ORADOR</h4>
+        <h6><dl class="text small">Anótate como un orador para dar una charla gratis. Cuéntanos de que quieres hablar</dl></h6>
       </div>  
   
 
-  <form class="row g-1 gx-5">
-    <div class="col-md-6 mb-3">
+  <form class="row g-1 gx-5 justify-content-center">
+    <div class="col-md-4 mb-3">
         <input type="text" class="form-control" placeholder="Nombre">
     </div>
-    <div class="col-md-6 mb-3">
+    <div class="col-md-4 mb-3">
         <input type="text" class="form-control" placeholder="Apellido">
     </div>
-    <div class="mb-3">
-        <textarea class="form-control fs-4" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
-        <p class="text-secondary"><sub>Recuerda incluir un título para tu charla</sub></p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <textarea class="form-control" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+          <p class="text-secondary"><sub>Recuerda incluir un título para tu charla</sub></p>
+        </div>
+      </div>
     </div>
-    <div class="d-grid mb-3">
-        <button class="btn text-white fs-5" style="background-color: #96c93e;" type="submit">Enviar</button>
+    
+
+    <div class="container cols-2 col-md-6">
+        <div class="d-grid mb-5">
+          <button class="btn text-white fs-6" style="background-color: #96c93e;" type="submit">Enviar</button>
+        </div>
     </div>
 </form>
+
+<footer>
+  <div class="container-fluid-0">
+    <div class="row-cols-1">
+      <nav class="navbar bg-dark background: linear-gradient">
+        <div class="container-fluid justify-content-center">
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Preguntas <br>frecuentes</a></h6>
+            </li>
+            <li class="nav-item mr-20">
+              <h6><a class="nav-link text-white" href="#">Contáctanos</a></h6>
+            </li>
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Prensa</a></h6>
+            </li>
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Conferencias</a></h6>
+            </li>
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Términos y<br>condiciones</a></h6>
+            </li>
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Privacidad</a></h6>
+            </li>
+            <li class="nav-item mr-10">
+              <h6><a class="nav-link text-white" href="#">Estudiantes</a></h6>
+            </li> 
+        </div>
+      </nav>
+    </div>
+  </div>
+</footer>
 
 </body>
