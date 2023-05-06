@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" src="styles.css">
     <title>TP Integrador</title>
 </head>
 <body>
@@ -43,16 +44,27 @@
   <aside class="container-fluid">
     <div class="row">
         <div class="col">
-          <img src="./imagenes_integrador_front/hawaii.jpg" class="img-fluid" alt="Imagen">
+          <img src="./imagenes_integrador_front/hawaii.jpg" class="img-fluid overlay overlay-dark" alt="Imagen">
         </div>
     </div>  
-  </aside>
 
+    <div class="">
+      <div id="move" class="position-absolute top-50 start-50 translate-middle-x text-light text-end">
+        <h1>Conf Bs As</h1>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartit con
+          nuestra comunidad el conocimiento y experiencia de los expertos que
+          están creando el futuro de Internet. Ven a conocer a miembros del
+          evento, a otros estudiantes de Codo a Codo y los oradores de primer
+          nivel que tenemos para ti.  
+        </p>
+          <div class=" gap-2 d-md-block d-grid">
+            <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+            <button type="button" class="btn btn-success Btn-Verde">Comprar tickets</button>
+        </div>
+      </div>
+    </div>
+</aside>
 
-        
-
-  
- 
 
   <div class="container mt-2 text-center">
     <h6><dl>CONOCE A LOS</dl></h6>
@@ -93,6 +105,55 @@
       </div>
   </div> 
 
-    
+  <div class="container">
+    <label></label>
+  </div>
+
+  <div class="container card-img-top">
+    <div class="row row-cols-1 row-cols-md-2 g-0">
+        <div class="row-cols-1">
+          <div class="card h-100">
+            <img src="./imagenes_integrador_front/honolulu.jpg">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+
+        <div class="row-cols-1">
+          <div class="card h-100 background-color bg-dark p-3">
+            <div class="card-body">
+              <p class="text-white">Bs As - Octubre</p>
+              <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina
+                sdjflksdjfklsjflkdsjfjslkjfklsdjfljlsjflsfjsljfslkjf
+                skjflkdsjflkjsdlkfjslkfjslkjfklsjfsd
+                sljdfklsjflskjfkljdfskljfsdjfjsdlfjslkjfklsdjfjdjskj
+              </p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#demo">Conoce mas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div class="container mt-2 text-center">
+        <h6><dl>CONOCE A LOS</dl></h6>
+        <h4 mt-0>ORADOR</h4>
+      </div>  
+  
+
+  <form class="row g-1 gx-5">
+    <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Apellido">
+    </div>
+    <div class="mb-3">
+        <textarea class="form-control fs-4" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+        <p class="text-secondary"><sub>Recuerda incluir un título para tu charla</sub></p>
+    </div>
+    <div class="d-grid mb-3">
+        <button class="btn text-white fs-5" style="background-color: #96c93e;" type="submit">Enviar</button>
+    </div>
+</form>
+
 </body>
-</html>
