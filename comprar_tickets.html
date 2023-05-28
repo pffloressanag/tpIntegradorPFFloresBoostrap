@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <title>Venta de Tickets</title>
+</head>
+<body>
+
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-sm-3">
+        <div class="border border-primary p-1">
+          <div class="bg-white p-1 text-center">
+            <h3 class="font-weight-bold">Estudiante</h3>
+            <p>Tienen un descuento</p>
+            <p class="font-weight-bold">80%</p>
+            <p>* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="border border-primary p-1">
+          <div class="bg-white p-1 text-center">
+            <h3 class="font-weight-bold">Trainee</h3>
+            <p>Tienen un descuento</p>
+            <p class="font-weight-bold">50%</p>
+            <p>* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="border border-warning p-1">
+          <div class="bg-white p-1 text-center">
+            <h3 class="font-weight-bold">Junior</h3>
+            <p>Tienen un descuento</p>
+            <p class="font-weight-bold">15%</p>
+            <p>* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>         
+
+  <div class="container">
+        <h6 class="text-center">VENTA</h6>
+        <h1 class="text-center font-weight-bold">VALOR DE TICKET $200</h1>
+
+        <form class="needs-validation" novalidate>
+          <div class="form-row justify-content-center">
+            <div class="col-md-4">
+              <input type="text" id="nombre" placeholder="Nombre" class="form-control" required>
+              <div class="invalid-feedback">
+                Debe completar este campo
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <input type="text" id="apellido" placeholder="Apellido" class="form-control" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio.
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-row justify-content-center">
+            <div class="col-md-8"><br>
+                <input type="email" id="correo" placeholder="Correo" class="form-control" required>
+                <div class="invalid-feedback">
+                  Este campo es obligatorio.
+                </div>
+            </div>
+          </div>  
+
+          <div class="form-row justify-content-center font-weight-bold">
+            <div class="col-md-4"><br>
+                <label class="form-label" for="cantidad">Cantidad</label>
+              <input type="text"  placeholder="cantidad" id="cant" class="form-control" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio.
+              </div>
+            </div>
+
+            <div class="col-md-4 font-weight-bold"><br>
+                <label class="form-label" for="categoria">Categoría</label><br>
+              <select id="selectOper" name="categpria" class="col-md-12">
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="container col-md-8 p-1 my-3 bg-primary text-white font-weight-bold">
+            <p>Total a Pagar: $</p>
+            <p id="total_pagar">
+            </p>
+          </div>
+          
+          <div class="container text-center">
+              <button type="button" id="btnBorrar" onclick="borrarCampos()" class="btn btn-primary col-md-4 bg-success text-white font-weight-bold">Borrar</button>
+              <button type="button" onclick="resumen()" class="btn btn-primary col-md-4 bg-success text-white font-weight-bold">Resumen</button>
+          </div>
+        
+        </form>
+      </div>
+
+</body>
+</html>
